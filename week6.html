@@ -22,23 +22,78 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for modifications -->
   <style>
-    h4 {
-      font-weight: bold !important;
-      color: #f28c38 !important;
+    .card {
+      border-radius: 8px; /* Curved edges for all cards */
+      border: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
     }
+
     .card-body {
       padding: 2rem !important;
     }
+ .image-card {
+      margin-bottom: 1.5rem; /* Reduced margin for image cards */
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+    transform: translateY(-10px); /* Moves card upward on hover */
+  }
+    .image-card .card-body {
+      padding: 1rem !important; /* Reduced padding for smaller image card size */
+    }
+
     .card-img-top {
-      height: 300px !important;
+      height: 300px !important; /* Original image size preserved */
       object-fit: contain !important;
+    }
+
+    h3.card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: bold !important;
+      color: #f28c38 !important;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .session-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -62,44 +117,71 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <!-- Session Details -->
             <div class="card mb-4 shadow-sm">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Session Details</h3>
-                <p class="mb-2"><strong>Date:</strong> 22nd Mar 2025</p>
-                <p class="mb-2"><strong>Resource Person:</strong> Mr. Gajarthan Thevarajah</p>
-                <p class="mb-2"><strong>Designation:</strong> Co-Founder & CEO, Bohar Solutions Pvt Ltd</p>
-                <p class="mb-0"><strong>Topic:</strong> Skills Required to Select a Career Path</p>
+              <div class="card-body session-details">
+                <h3 class="card-title">Session Details</h3>
+                <p><strong>Date:</strong> 22nd Mar 2025</p>
+                <p><strong>Resource Person:</strong> Mr. Gajarthan Thevarajah</p>
+                <p><strong>Designation:</strong> Co-Founder & CEO, Bohar Solutions Pvt Ltd</p>
+                <p><strong>Topic:</strong> Skills Required to Select a Career Path</p>
               </div>
             </div>
 
             <!-- Topic Summary -->
-            <h4 class="mt-5 mb-3">Topic Summary</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>Topic Summary</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Gajarthan Thevarajah shared his inspiring entrepreneurial journey, offering practical advice on choosing a career path that aligns with personal passion and market demands. He emphasized starting small, building momentum through projects, and learning by doing to carve a successful career path.</p>
+                <ul>
+                  <li>Mr. Gajarthan Thevarajah shared his inspiring entrepreneurial journey.</li>
+                  <li>He offered practical advice on choosing a career path that aligns with personal passion and market demands.</li>
+                  <li>He emphasized starting small, building momentum through projects, and learning by doing to carve a successful career path.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Taught -->
-            <h4 class="mt-5 mb-3">What Was Taught</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Taught</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Gajarthan emphasized the importance of self-awareness in identifying one’s strengths and passions to guide career choices. He discussed the need for self-learning, adaptability, and resilience in navigating career challenges, encouraging students to take calculated risks and continuously improve skills to stay competitive. His personal story highlighted that career paths are often non-linear, requiring persistence and openness to new opportunities. He stressed the importance of starting projects early, even if imperfect, and shared the tip: "You don't need to learn everything - just start building with what you know." The session also covered technical skills like Git, HTML, CSS, JavaScript, React, and UI/UX design with Figma, alongside soft skills like communication, consistency, and curiosity. Common mistakes to avoid included focusing too much on theory, not asking for help, and delaying sharing work publicly.</p>
+                <ul>
+                  <li>Self-awareness is crucial for identifying strengths and passions to guide career choices.</li>
+                  <li>Self-learning, adaptability, and resilience are essential for navigating career challenges.</li>
+                  <li>Students should take calculated risks and continuously improve skills to stay competitive.</li>
+                  <li>Career paths are often non-linear, requiring persistence and openness to new opportunities.</li>
+                  <li>Starting projects early, even if imperfect, is key, with the tip: "You don't need to learn everything - just start building with what you know."</li>
+                  <li>Technical skills include Git, HTML, CSS, JavaScript, React, and UI/UX design with Figma.</li>
+                  <li>Soft skills include communication, consistency, and curiosity.</li>
+                  <li>Common mistakes to avoid include focusing too much on theory, not asking for help, and delaying sharing work publicly.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Learned -->
-            <h4 class="mt-5 mb-3">What Was Learned</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Learned</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I learned that choosing a career involves balancing personal interests with market needs, and that resilience and curiosity are key to overcoming obstacles and seizing opportunities. The session taught me the value of starting messy and building projects to showcase skills, rather than waiting for perfection. I also understood the importance of using platforms like GitHub to document work and connecting with mentors for guidance. Continuous learning and taking action early are essential for long-term career success.</p>
+                <ul>
+                  <li>Choosing a career involves balancing personal interests with market needs.</li>
+                  <li>Resilience and curiosity are key to overcoming obstacles and seizing opportunities.</li>
+                  <li>Starting messy and building projects to showcase skills is more effective than waiting for perfection.</li>
+                  <li>Using platforms like GitHub to document work and connecting with mentors are important for guidance.</li>
+                  <li>Continuous learning and taking action early are essential for long-term career success.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What I Plan to Implement -->
-            <h4 class="mt-5 mb-3">What I Plan to Implement in the Future</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What I Plan to Implement in the Future</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I will reflect on my passions and strengths to identify potential career paths and explore new areas of interest through online courses and side projects to broaden my skill set. I plan to take calculated risks, such as pursuing internships in diverse fields, to discover the best fit for my career goals. Additionally, I will build a personal website, push at least 10 commits to GitHub, and join or start a student developer group to collaborate and learn. I’ll also post weekly updates on LinkedIn to share my progress and build my professional presence. In the long term, I aim to execute projects consistently, starting small and improving iteratively.</p>
+                <ul>
+                  <li>I will reflect on my passions and strengths to identify potential career paths.</li>
+                  <li>I’ll explore new areas of interest through online courses and side projects to broaden my skill set.</li>
+                  <li>I plan to take calculated risks, such as pursuing internships in diverse fields, to discover the best fit for my career goals.</li>
+                  <li>I will build a personal website and push at least 10 commits to GitHub.</li>
+                  <li>I’ll join or start a student developer group to collaborate and learn.</li>
+                  <li>I’ll post weekly updates on LinkedIn to share my progress and build my professional presence.</li>
+                  <li>I aim to execute projects consistently, starting small and improving iteratively.</li>
+                </ul>
               </div>
             </div>
 
@@ -107,24 +189,24 @@
             <h4 class="mt-5 mb-3">Session Images</h4>
             <div class="row">
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card shadow-sm h-100">
-                  <img src="images/gaja.jpeg" class="card-img-top" alt="Session Image 1" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/gaja.jpeg" class="card-img-top" alt="Mr. Gajarthan Thevarajah discussing career paths">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 1</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card shadow-sm h-100">
-                  <img src="images/gaja3.png" class="card-img-top" alt="Session Image 2" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/gaja3.png" class="card-img-top" alt="Participants learning about project-building">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 2</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card shadow-sm h-100">
-                  <img src="images/gaja2.jpeg" class="card-img-top" alt="Session Image 3" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/gaja2.jpeg" class="card-img-top" alt="Group discussion on technical and soft skills">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 3</p>
                   </div>
@@ -140,13 +222,12 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
+        <p>© <span id="current-year"></span> <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/a.n.o._.2k/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ano2k/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com/@ano_2k" class="youtube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </footer>
@@ -160,6 +241,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

@@ -22,23 +22,79 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for modifications -->
   <style>
-    h4 {
-      font-weight: bold !important;
-      color: #f28c38 !important;
+    .card {
+      border-radius: 8px; /* Curved edges for all cards */
+      border: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
     }
+
     .card-body {
       padding: 2rem !important;
     }
+
+ .image-card {
+      margin-bottom: 1.5rem; /* Reduced margin for image cards */
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+    transform: translateY(-10px); /* Moves card upward on hover */
+  }
+    .image-card .card-body {
+      padding: 1rem !important; /* Reduced padding for smaller image card size */
+    }
+
     .card-img-top {
-      height: 300px !important;
+      height: 300px !important; /* Original image size preserved */
       object-fit: contain !important;
+    }
+
+    h3.card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: bold !important;
+      color: #f28c38 !important;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .session-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -62,44 +118,71 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <!-- Session Details -->
             <div class="card mb-4 shadow-sm">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Session Details</h3>
-                <p class="mb-2"><strong>Date:</strong> 8th Mar 2025</p>
-                <p class="mb-2"><strong>Resource Person:</strong> Mr. Gobinthiran Kulendran</p>
-                <p class="mb-2"><strong>Designation:</strong> CEO, Huex</p>
-                <p class="mb-0"><strong>Topic:</strong> Job Role – UI/UX Engineering</p>
+              <div class="card-body session-details">
+                <h3 class="card-title">Session Details</h3>
+                <p><strong>Date:</strong> 8th Mar 2025</p>
+                <p><strong>Resource Person:</strong> Mr. Gobinthiran Kulendran</p>
+                <p><strong>Designation:</strong> CEO, Huex</p>
+                <p><strong>Topic:</strong> Job Role – UI/UX Engineering</p>
               </div>
             </div>
 
             <!-- Topic Summary -->
-            <h4 class="mt-5 mb-3">Topic Summary</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>Topic Summary</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Gobinthiran Kulendran delivered an insightful session on UI/UX engineering, explaining its critical role in creating user-friendly digital products that enhance user retention and drive business revenue. He highlighted its competitive edge in the tech industry and the growing global demand for UI/UX professionals, particularly in Sri Lanka and international markets.</p>
+                <ul>
+                  <li>Mr. Gobinthiran Kulendran delivered an insightful session on UI/UX engineering, explaining its critical role in creating user-friendly digital products.</li>
+                  <li>He highlighted how UI/UX enhances user retention, drives business revenue, and provides a competitive edge in the tech industry.</li>
+                  <li>The session emphasized the growing global demand for UI/UX professionals, particularly in Sri Lanka and international markets.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Taught -->
-            <h4 class="mt-5 mb-3">What Was Taught</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Taught</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Gobinthiran explained the distinction between User Interface (UI), which focuses on a product’s look and interactivity, and User Experience (UX), which enhances usability, accessibility, and user satisfaction. He detailed the Design Thinking process—empathize, define, ideate, prototype, test, implement—as the most common UI/UX framework, alongside other methodologies like Double Diamond, Lean UX, and Google’s Design Sprint for proof-of-concept development. He introduced tools such as Figma, Adobe XD, and Balsamiq for design and wireframing, and Hotjar and Clarity for user research and analytics. Essential skills for UI/UX designers included psychology to understand user behavior, critical thinking for solving design problems, market research for analyzing trends, communication for defending design decisions, empathy for user-centric design, and basic coding knowledge (HTML, CSS, JavaScript) for collaboration with developers. He outlined career roles like UI Designer, UX Designer, Product Designer, and UX Researcher, noting their growing demand in Sri Lanka (startups, banking, e-commerce) and globally (USA, UK, Middle East). He emphasized the importance of continuous learning, freelancing opportunities on platforms like Upwork and Fiverr, and running a UX agency. The session underscored user-centered design principles and the need for a strong portfolio and LinkedIn presence to showcase skills.</p>
+                <ul>
+                  <li>User Interface (UI) focuses on a product’s look and interactivity, while User Experience (UX) enhances usability, accessibility, and user satisfaction.</li>
+                  <li>The Design Thinking process—empathize, define, ideate, prototype, test, implement—is the most common UI/UX framework, alongside Double Diamond, Lean UX, and Google’s Design Sprint.</li>
+                  <li>Tools include Figma, Adobe XD, and Balsamiq for design and wireframing, and Hotjar and Clarity for user research and analytics.</li>
+                  <li>Essential skills include psychology for user behavior, critical thinking for design problems, market research for trends, communication for defending designs, empathy for user-centric design, and basic coding (HTML, CSS, JavaScript) for developer collaboration.</li>
+                  <li>Career roles include UI Designer, UX Designer, Product Designer, and UX Researcher, with growing demand in Sri Lanka (startups, banking, e-commerce) and globally (USA, UK, Middle East).</li>
+                  <li>Continuous learning, freelancing on platforms like Upwork and Fiverr, and running a UX agency were emphasized.</li>
+                  <li>User-centered design principles, a strong portfolio, and a LinkedIn presence are crucial for showcasing skills.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Learned -->
-            <h4 class="mt-5 mb-3">What Was Learned</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Learned</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I gained a comprehensive understanding of the UI/UX design process, particularly the iterative Design Thinking framework, and its profound impact on user satisfaction and business success. The session clarified that UI/UX is not just about aesthetics but about solving user problems through empathy and research. I learned about the diverse tools and skills required, from Figma for prototyping to psychology for understanding users, and the variety of career paths available, including freelancing and agency work. The importance of building a portfolio with 3-5 detailed projects and optimizing my LinkedIn profile for networking was a key takeaway. I also recognized the global demand for UI/UX professionals and the need for continuous learning to stay competitive in this dynamic field.</p>
+                <ul>
+                  <li>I gained a comprehensive understanding of the UI/UX design process, particularly the iterative Design Thinking framework, and its impact on user satisfaction and business success.</li>
+                  <li>UI/UX is about solving user problems through empathy and research, not just aesthetics.</li>
+                  <li>I learned about diverse tools (e.g., Figma for prototyping) and skills (e.g., psychology for user understanding) required in UI/UX.</li>
+                  <li>Career paths include freelancing, agency work, and roles like UX Designer or Product Designer.</li>
+                  <li>Building a portfolio with 3-5 detailed projects and optimizing my LinkedIn profile are key for networking.</li>
+                  <li>The global demand for UI/UX professionals requires continuous learning to stay competitive.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What I Plan to Implement -->
-            <h4 class="mt-5 mb-3">What I Plan to Implement in the Future</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What I Plan to Implement in the Future</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I will explore online platforms like Udemy, Coursera (Google UX Design Certificate), and the Interaction Design Foundation to learn UI/UX design principles and tools. I plan to practice wireframing and prototyping using Figma and Balsamiq to enhance my design skills. I’ll build a portfolio showcasing 3-5 projects with detailed process breakdowns, hosted on platforms like Behance or a personal website, and optimize my LinkedIn profile by highlighting UI/UX skills, projects, and certifications. I intend to read recommended books like "The Design of Everyday Things" by Donald A. Norman to deepen my understanding of design principles. I’ll also explore freelancing opportunities on platforms like Upwork to gain practical experience. In the long term, I aim to incorporate user-centered design principles into my projects to create intuitive, impactful solutions and pursue a career in UI/UX, potentially as a UX Designer or Product Designer.</p>
+                <ul>
+                  <li>I will explore online platforms like Udemy, Coursera (Google UX Design Certificate), and Interaction Design Foundation to learn UI/UX principles and tools.</li>
+                  <li>I plan to practice wireframing and prototyping using Figma and Balsamiq to enhance my design skills.</li>
+                  <li>I’ll build a portfolio showcasing 3-5 projects with detailed process breakdowns, hosted on Behance or a personal website.</li>
+                  <li>I will optimize my LinkedIn profile by highlighting UI/UX skills, projects, and certifications.</li>
+                  <li>I’ll read books like "The Design of Everyday Things" by Donald A. Norman to deepen my understanding of design principles.</li>
+                  <li>I’ll explore freelancing on Upwork to gain practical experience.</li>
+                  <li>I aim to incorporate user-centered design principles into projects and pursue a career in UI/UX, potentially as a UX Designer or Product Designer.</li>
+                </ul>
               </div>
             </div>
 
@@ -107,24 +190,24 @@
             <h4 class="mt-5 mb-3">Session Images</h4>
             <div class="row">
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card shadow-sm h-100">
-                  <img src="images/goobi.jpeg" class="card-img-top" alt="Session Image 1" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/goobi.jpeg" class="card-img-top" alt="Mr. Gobinthiran Kulendran discussing UI/UX engineering">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 1</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card shadow-sm h-100">
-                  <img src="images/gobi2.jpeg" class="card-img-top" alt="Session Image 2" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/gobi2.jpeg" class="card-img-top" alt="Participants learning about Design Thinking">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 2</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card shadow-sm h-100">
-                  <img src="images/gobi3.png" class="card-img-top" alt="Session Image 3" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/gobi3.png" class="card-img-top" alt="Group activity on UI/UX tools and frameworks">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 3</p>
                   </div>
@@ -140,13 +223,12 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
+        <p>© <span id="current-year"></span> <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/a.n.o._.2k/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ano2k/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com/@ano_2k" class="youtube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </footer>
@@ -160,6 +242,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

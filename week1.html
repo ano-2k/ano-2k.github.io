@@ -25,22 +25,77 @@
 
   <!-- Custom CSS for modifications -->
   <style>
-    h4 {
-      font-weight: bold !important;
-      color: #f28c38 !important;
+    .card {
+      border-radius: 8px; /* Curved edges for all cards */
+      border: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
     }
+
     .card-body {
       padding: 2rem !important;
     }
+
+    .image-card {
+      margin-bottom: 1.5rem; /* Reduced margin for image cards */
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+    transform: translateY(-10px); /* Moves card upward on hover */
+  }
+
+    .image-card .card-body {
+      padding: 1rem !important; /* Reduced padding for smaller image card size */
+    }
+
     .card-img-top {
-      height: 300px !important;
+      height: 300px !important; /* Original image size preserved */
       object-fit: contain !important;
+    }
+
+    h3.card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: bold !important;
+      color: #f28c38 !important;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .session-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -64,44 +119,58 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <!-- Session Details -->
             <div class="card mb-4 shadow-sm">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Session Details</h3>
-                <p class="mb-2"><strong>Date:</strong> 1st Feb 2025</p>
-                <p class="mb-2"><strong>Resource Person:</strong> Ms. Vishaliney Pirathap</p>
-                <p class="mb-2"><strong>Designation:</strong> Lecturer, Northern Uni</p>
-                <p class="mb-0"><strong>Topic:</strong> Introduction to Employability Skills Development</p>
+              <div class="card-body session-details">
+                <h3 class="card-title">Session Details</h3>
+                <p><strong>Date:</strong> 1st Feb 2025</p>
+                <p><strong>Resource Person:</strong> Ms. Vishaliney Pirathap</p>
+                <p><strong>Designation:</strong> Lecturer, Northern Uni</p>
+                <p><strong>Topic:</strong> Introduction to Employability Skills Development</p>
               </div>
             </div>
 
             <!-- Topic Summary -->
-            <h4 class="mt-5 mb-3">Topic Summary</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>Topic Summary</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>In this foundational session, Ms. Vishaliney Pirathap introduced the Employability Skills Development (ESD) module, outlining its objectives and structure. She highlighted the critical role of employability skills in standing out in today’s competitive job market, emphasizing their importance for career success.</p>
+                <ul>
+                  <li>Ms. Vishaliney Pirathap introduced the Employability Skills Development (ESD) module, outlining its objectives and structure.</li>
+                  <li>She highlighted the critical role of employability skills in standing out in today’s competitive job market, emphasizing their importance for career success.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Taught -->
-            <h4 class="mt-5 mb-3">What Was Taught</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Taught</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Ms. Pirathap explained that employability skills, such as effective communication, teamwork, time management, and problem-solving, are essential for professional growth. She discussed how these skills complement technical expertise and are highly valued by employers. The session included an overview of the module’s weekly structure and expectations, encouraging students to engage in self-assessments and group activities to develop these skills.</p>
+                <ul>
+                  <li>Ms. Pirathap explained that employability skills, such as effective communication, teamwork, time management, and problem-solving, are essential for professional growth.</li>
+                  <li>She discussed how these skills complement technical expertise and are highly valued by employers.</li>
+                  <li>The session included an overview of the module’s weekly structure and expectations, encouraging students to engage in self-assessments and group activities to develop these skills.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Learned -->
-            <h4 class="mt-5 mb-3">What Was Learned</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Learned</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I gained a deeper understanding of how employability skills can enhance my career prospects. The session clarified the importance of proactively developing soft skills early in my academic journey to prepare for professional environments. I also learned the value of self-reflection in identifying areas for improvement.</p>
+                <ul>
+                  <li>I gained a deeper understanding of how employability skills can enhance my career prospects.</li>
+                  <li>The session clarified the importance of proactively developing soft skills early in my academic journey to prepare for professional environments.</li>
+                  <li>I also learned the value of self-reflection in identifying areas for improvement.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What I Plan to Implement -->
-            <h4 class="mt-5 mb-3">What I Plan to Implement in the Future</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What I Plan to Implement in the Future</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Moving forward, I will actively participate in group discussions and collaborative projects to strengthen my teamwork and communication skills. I’ll also use self-assessment tools to track my progress and identify gaps in my employability skills, aiming to build a strong foundation for my career.</p>
+                <ul>
+                  <li>I will actively participate in group discussions and collaborative projects to strengthen my teamwork and communication skills.</li>
+                  <li>I’ll use self-assessment tools to track my progress and identify gaps in my employability skills, aiming to build a strong foundation for my career.</li>
+                </ul>
               </div>
             </div>
 
@@ -109,24 +178,24 @@
             <h4 class="mt-5 mb-3">Session Images</h4>
             <div class="row">
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card shadow-sm h-100">
-                  <img src="images/emp1.png" class="card-img-top" alt="Session Image 1">
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/emp1.png" class="card-img-top" alt="Ms. Vishaliney Pirathap presenting ESD module">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 1</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card shadow-sm h-100">
-                  <img src="images/emp2.jpg" class="card-img-top" alt="Session Image 2">
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/emp2.jpg" class="card-img-top" alt="Students engaging in ESD session activities">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 2</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card shadow-sm h-100">
-                  <img src="images/emp3.png" class="card-img-top" alt="Session Image 3">
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/emp3.png" class="card-img-top" alt="Group discussion during ESD session">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 3</p>
                   </div>
@@ -142,13 +211,12 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
+        <p>© <span id="current-year"></span> <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/a.n.o._.2k/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ano2k/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com/@ano_2k" class="youtube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </footer>
@@ -162,6 +230,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

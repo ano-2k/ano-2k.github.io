@@ -22,23 +22,80 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for modifications -->
   <style>
-    h4 {
-      font-weight: bold !important;
-      color: #f28c38 !important;
+    .card {
+      border-radius: 8px; /* Curved edges for all cards */
+      border: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
     }
+
     .card-body {
       padding: 2rem !important;
     }
+
+ .image-card {
+      margin-bottom: 1.5rem; /* Reduced margin for image cards */
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+    transform: translateY(-10px); /* Moves card upward on hover */
+  }
+
+    .image-card .card-body {
+      padding: 1rem !important; /* Reduced padding for smaller image card size */
+    }
+
     .card-img-top {
-      height: 300px !important;
+      height: 300px !important; /* Original image size preserved */
       object-fit: contain !important;
+    }
+
+    h3.card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: bold !important;
+      color: #f28c38 !important;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .session-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -62,44 +119,61 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <!-- Session Details -->
             <div class="card mb-4 shadow-sm">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Session Details</h3>
-                <p class="mb-2"><strong>Date:</strong> 19th Apr 2025</p>
-                <p class="mb-2"><strong>Resource Person:</strong> Ms. Sarmila Sivaraja</p>
-                <p class="mb-2"><strong>Designation:</strong> Google Women Techmakers Ambassador, CEO – 2SF Labs</p>
-                <p class="mb-0"><strong>Topic:</strong> Achieving Your Dream – Job Roles in Non-IT Fields</p>
+              <div class="card-body session-details">
+                <h3 class="card-title">Session Details</h3>
+                <p><strong>Date:</strong> 19th Apr 2025</p>
+                <p><strong>Resource Person:</strong> Ms. Sarmila Sivaraja</p>
+                <p><strong>Designation:</strong> Google Women Techmakers Ambassador, CEO – 2SF Labs</p>
+                <p><strong>Topic:</strong> Achieving Your Dream – Job Roles in Non-IT Fields</p>
               </div>
             </div>
 
             <!-- Topic Summary -->
-            <h4 class="mt-5 mb-3">Topic Summary</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>Topic Summary</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Ms. Sarmila Sivaraja shared her journey of founding 2SF Labs, a collaborative space for innovation, and provided insights into pursuing dream careers, including opportunities in non-IT fields.</p>
+                <ul>
+                  <li>Ms. Sarmila Sivaraja shared her journey of founding 2SF Labs, a collaborative space for innovation.</li>
+                  <li>She provided insights into pursuing dream careers, including opportunities in non-IT fields.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Taught -->
-            <h4 class="mt-5 mb-3">What Was Taught</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Taught</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Ms. Sarmila introduced platforms like Toastmasters for improving public speaking, Clubhouse for networking, and online learning resources like Coursera and Google I/O for skill development. She emphasized the importance of knowledge sharing, continuous learning, and reading influential books like “Rich Dad, Poor Dad.” Her story of turning her vision into a startup highlighted the value of perseverance and innovation. She also discussed the diverse roles available in non-IT fields, such as project management and entrepreneurship.</p>
+                <ul>
+                  <li>Platforms like Toastmasters improve public speaking, Clubhouse enhances networking, and Coursera and Google I/O support skill development.</li>
+                  <li>Knowledge sharing, continuous learning, and reading influential books like “Rich Dad, Poor Dad” are essential.</li>
+                  <li>Her story of turning her vision into a startup highlighted perseverance and innovation.</li>
+                  <li>Diverse roles in non-IT fields include project management and entrepreneurship.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Learned -->
-            <h4 class="mt-5 mb-3">What Was Learned</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Learned</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I was inspired by Ms. Sarmila’s entrepreneurial journey and learned about the wide range of career opportunities beyond IT. The session taught me the value of public speaking, networking, and lifelong learning in achieving professional goals. I also gained insights into the mindset required to start a venture.</p>
+                <ul>
+                  <li>Ms. Sarmila’s entrepreneurial journey inspired me to explore careers beyond IT.</li>
+                  <li>Public speaking, networking, and lifelong learning are critical for achieving professional goals.</li>
+                  <li>I gained insights into the mindset required to start a venture.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What I Plan to Implement -->
-            <h4 class="mt-5 mb-3">What I Plan to Implement in the Future</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What I Plan to Implement in the Future</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I will join platforms like Toastmasters to improve my public speaking skills and explore networking opportunities on Clubhouse. I’ll also enroll in relevant Coursera courses to broaden my knowledge. In the long term, I plan to explore entrepreneurial ideas and consider non-IT career paths that align with my interests.</p>
+                <ul>
+                  <li>I will join Toastmasters to improve my public speaking skills.</li>
+                  <li>I’ll explore networking opportunities on Clubhouse.</li>
+                  <li>I’ll enroll in relevant Coursera courses to broaden my knowledge.</li>
+                  <li>I plan to explore entrepreneurial ideas and consider non-IT career paths that align with my interests.</li>
+                </ul>
               </div>
             </div>
 
@@ -107,24 +181,24 @@
             <h4 class="mt-5 mb-3">Session Images</h4>
             <div class="row">
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card shadow-sm h-100">
-                  <img src="images/sarmila.jpeg" class="card-img-top" alt="Session Image 1" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/sarmila.jpeg" class="card-img-top" alt="Ms. Sarmila Sivaraja discussing non-IT career paths">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 1</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card shadow-sm h-100">
-                  <img src="images/Image.jpg" class="card-img-top" alt="Session Image 2" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/Image.jpg" class="card-img-top" alt="Participants learning about networking platforms">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 2</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card shadow-sm h-100">
-                  <img src="images/sarmila2.jpeg" class="card-img-top" alt="Session Image 3" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/sarmila2.jpeg" class="card-img-top" alt="Group discussion on entrepreneurship">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 3</p>
                   </div>
@@ -140,13 +214,12 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
+        <p>© <span id="current-year"></span> <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/a.n.o._.2k/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ano2k/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com/@ano_2k" class="youtube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </footer>
@@ -160,6 +233,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

@@ -22,23 +22,79 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for modifications -->
   <style>
-    h4 {
-      font-weight: bold !important;
-      color: #f28c38 !important;
+    .card {
+      border-radius: 8px; /* Curved edges for all cards */
+      border: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
     }
+
     .card-body {
       padding: 2rem !important;
     }
+
+ .image-card {
+      margin-bottom: 1.5rem; /* Reduced margin for image cards */
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+    transform: translateY(-10px); /* Moves card upward on hover */
+  }
+    .image-card .card-body {
+      padding: 1rem !important; /* Reduced padding for smaller image card size */
+    }
+
     .card-img-top {
-      height: 300px !important;
+      height: 300px !important; /* Original image size preserved */
       object-fit: contain !important;
+    }
+
+    h3.card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: bold !important;
+      color: #f28c38 !important;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .session-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -62,44 +118,60 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <!-- Session Details -->
             <div class="card mb-4 shadow-sm">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Session Details</h3>
-                <p class="mb-2"><strong>Date:</strong> 22nd Feb 2025</p>
-                <p class="mb-2"><strong>Resource Person:</strong> Mr. Miller Alexander Rajendran</p>
-                <p class="mb-2"><strong>Designation:</strong> CEO, SenzAgro Solutions</p>
-                <p class="mb-0"><strong>Topic:</strong> Industry Expectations, Skills, and Attitudes – Technical Aspect</p>
+              <div class="card-body session-details">
+                <h3 class="card-title">Session Details</h3>
+                <p><strong>Date:</strong> 22nd Feb 2025</p>
+                <p><strong>Resource Person:</strong> Mr. Miller Alexander Rajendran</p>
+                <p><strong>Designation:</strong> CEO, SenzAgro Solutions</p>
+                <p><strong>Topic:</strong> Industry Expectations, Skills, and Attitudes – Technical Aspect</p>
               </div>
             </div>
 
             <!-- Topic Summary -->
-            <h4 class="mt-5 mb-3">Topic Summary</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>Topic Summary</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Miller Alexander Rajendran shared practical advice on navigating the corporate world, focusing on how to effectively present technical skills and achievements to stand out in a competitive environment.</p>
+                <ul>
+                  <li>Mr. Miller Alexander Rajendran shared practical advice on navigating the corporate world.</li>
+                  <li>He focused on effectively presenting technical skills and achievements to stand out in a competitive environment.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Taught -->
-            <h4 class="mt-5 mb-3">What Was Taught</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Taught</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Miller emphasized the importance of visibility in the workplace, warning that failing to showcase one’s work could allow others to take credit. He encouraged confidence, clear communication, and taking ownership of accomplishments. The session highlighted that while technical skills are crucial, attitude and proactive communication are equally important for career advancement. He also discussed strategies for documenting and presenting achievements effectively.</p>
+                <ul>
+                  <li>Mr. Miller emphasized the importance of visibility in the workplace, warning that failing to showcase one’s work could allow others to take credit.</li>
+                  <li>He encouraged confidence, clear communication, and taking ownership of accomplishments.</li>
+                  <li>While technical skills are crucial, attitude and proactive communication are equally important for career advancement.</li>
+                  <li>He discussed strategies for documenting and presenting achievements effectively.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Learned -->
-            <h4 class="mt-5 mb-3">What Was Learned</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Learned</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I realized that technical expertise alone is not enough; I need to actively communicate my contributions to gain recognition. The session taught me the value of confidence and assertiveness in professional settings, as well as the need to document my work systematically to showcase my skills.</p>
+                <ul>
+                  <li>Technical expertise alone is not enough; I need to actively communicate my contributions to gain recognition.</li>
+                  <li>The session taught the value of confidence and assertiveness in professional settings.</li>
+                  <li>I learned the need to document my work systematically to showcase my skills.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What I Plan to Implement -->
-            <h4 class="mt-5 mb-3">What I Plan to Implement in the Future</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What I Plan to Implement in the Future</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I will start documenting my project contributions in a structured manner, such as through reports or presentations, to highlight my achievements. I’ll also practice speaking up in team settings to ensure my work is recognized. In the long term, I aim to build confidence in presenting my skills during internships and job interviews.</p>
+                <ul>
+                  <li>I will document my project contributions in a structured manner, such as through reports or presentations, to highlight my achievements.</li>
+                  <li>I’ll practice speaking up in team settings to ensure my work is recognized.</li>
+                  <li>I aim to build confidence in presenting my skills during internships and job interviews.</li>
+                </ul>
               </div>
             </div>
 
@@ -107,24 +179,24 @@
             <h4 class="mt-5 mb-3">Session Images</h4>
             <div class="row">
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card shadow-sm h-100">
-                  <img src="images/week4.png" class="card-img-top" alt="Session Image 1" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/week4.png" class="card-img-top" alt="Mr. Miller Alexander Rajendran discussing technical skills">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 1</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card shadow-sm h-100">
-                  <img src="images/miller.jpeg" class="card-img-top" alt="Session Image 2" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/miller.jpeg" class="card-img-top" alt="Participants learning about workplace visibility">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 2</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card shadow-sm h-100">
-                  <img src="images/weeeek4.png" class="card-img-top" alt="Session Image 3">
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/weeeek4.png" class="card-img-top" alt="Group discussion on presenting achievements">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 3</p>
                   </div>
@@ -140,13 +212,12 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
+        <p>© <span id="current-year"></span> <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/a.n.o._.2k/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ano2k/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com/@ano_2k" class="youtube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </footer>
@@ -160,6 +231,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

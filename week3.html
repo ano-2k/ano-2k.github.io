@@ -22,24 +22,80 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for modifications -->
   <style>
-    h4 {
-      font-weight: bold !important;
-      color: #f28c38 !important;
+    .card {
+      border-radius: 8px; /* Curved edges for all cards */
+      border: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
     }
+
     .card-body {
       padding: 2rem !important;
     }
+
+ .image-card {
+      margin-bottom: 1.5rem; /* Reduced margin for image cards */
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+    transform: translateY(-10px); /* Moves card upward on hover */
+  }
+
+    .image-card .card-body {
+      padding: 1rem !important; /* Reduced padding for smaller image card size */
+    }
+
     .card-img-top {
-      height: 300px !important;
+      height: 300px !important; /* Original image size preserved */
       object-fit: contain !important;
     }
-  </style>
 
+    h3.card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: bold !important;
+      color: #f28c38 !important;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .session-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -63,44 +119,73 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <!-- Session Details -->
             <div class="card mb-4 shadow-sm">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Session Details</h3>
-                <p class="mb-2"><strong>Date:</strong> 15th Feb 2025</p>
-                <p class="mb-2"><strong>Resource Person:</strong> Mr. Mahinthan Subenthiran</p>
-                <p class="mb-2"><strong>Designation:</strong> Group Manager – Human Resources, NU, MT, MW (SL)</p>
-                <p class="mb-0"><strong>Topic:</strong> Industry Attitudes and HR Expectations</p>
+              <div class="card-body session-details">
+                <h3 class="card-title">Session Details</h3>
+                <p><strong>Date:</strong> 15th Feb 2025</p>
+                <p><strong>Resource Person:</strong> Mr. Mahinthan Subenthiran</p>
+                <p><strong>Designation:</strong> Group Manager – Human Resources, NU, MT, MW (SL)</p>
+                <p><strong>Topic:</strong> Industry Attitudes and HR Expectations</p>
               </div>
             </div>
 
             <!-- Topic Summary -->
-            <h4 class="mt-5 mb-3">Topic Summary</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>Topic Summary</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Mahinthan Subenthiran provided a comprehensive overview of the strategic role of human resources (HR) in organizations, focusing on industry expectations and the importance of professional attitudes. His insights bridged HR practices with workplace success, emphasizing how IT students can align their skills with industry needs for career growth.</p>
+                <ul>
+                  <li>Mr. Mahinthan Subenthiran provided a comprehensive overview of the strategic role of human resources (HR) in organizations, focusing on industry expectations and professional attitudes.</li>
+                  <li>His insights bridged HR practices with workplace success, emphasizing how IT students can align their skills with industry needs for career growth.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Taught -->
-            <h4 class="mt-5 mb-3">What Was Taught</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Taught</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Mr. Mahinthan clarified that HR is not just a department but a practice focused on managing people with respect and fairness, encompassing core functions like recruitment, onboarding, employee relations, learning and development, performance management, compensation, and cultural building. He distinguished between equity (fair treatment based on need) and equality (equal treatment for all), highlighting HR’s role in fostering inclusive workplaces. He outlined HR expectations from employees, including technical skills, adaptability, critical thinking, communication, professionalism, and digital proficiency. In interviews, HR evaluates skills, cultural fit, and long-term growth potential, emphasizing professional approaches like polished resumes, punctuality, and follow-up etiquette. He also discussed the importance of English proficiency for global communication and presentation skills for building credibility. Employees must understand employment contracts, labor laws, company policies, and job descriptions to navigate their roles effectively. Additionally, he covered components of a project proposal—setting clear goals, defining deliverables, establishing deadlines, and budgeting—as a tool for structured task management. His quote, “HR is not a job, it’s a practice,” underscored the human-centric nature of HR, while he emphasized that attitude shapes actions, ultimately defining professional success.</p>
+                <ul>
+                  <li>HR is not just a department but a practice focused on managing people with respect and fairness, encompassing recruitment, onboarding, employee relations, learning and development, performance management, compensation, and cultural building.</li>
+                  <li>HR distinguishes between equity (fair treatment based on need) and equality (equal treatment for all), fostering inclusive workplaces.</li>
+                  <li>HR expects employees to have technical skills, adaptability, critical thinking, communication, professionalism, and digital proficiency.</li>
+                  <li>In interviews, HR evaluates skills, cultural fit, and long-term growth potential, emphasizing polished resumes, punctuality, and follow-up etiquette.</li>
+                  <li>English proficiency is crucial for global communication, and presentation skills build credibility.</li>
+                  <li>Employees must understand employment contracts, labor laws, company policies, and job descriptions to navigate roles effectively.</li>
+                  <li>Project proposals involve setting clear goals, defining deliverables, establishing deadlines, and budgeting for structured task management.</li>
+                  <li>A quote, “HR is not a job, it’s a practice,” underscored the human-centric nature of HR, while attitude shapes actions, defining professional success.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Learned -->
-            <h4 class="mt-5 mb-3">What Was Learned</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Learned</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I learned that HR plays a pivotal role in aligning employee performance with organizational goals through managing the employee lifecycle, from recruitment to cultural integration. The distinction between equity and equality deepened my appreciation for fairness and inclusion in professional settings. I gained insights into crafting effective project proposals, which are essential for managing tasks efficiently. The session highlighted the importance of both technical and soft skills in interviews, as HR evaluates cultural fit and growth potential alongside qualifications. I also understood the need for legal literacy, such as understanding employment contracts and labor laws, and the significance of English proficiency and presentation skills in building a professional presence. A positive attitude and adherence to company policies are critical for workplace success.</p>
+                <ul>
+                  <li>HR aligns employee performance with organizational goals through managing the employee lifecycle, from recruitment to cultural integration.</li>
+                  <li>The distinction between equity and equality deepened my appreciation for fairness and inclusion in professional settings.</li>
+                  <li>Crafting effective project proposals is essential for managing tasks efficiently.</li>
+                  <li>HR evaluates cultural fit and growth potential in interviews, alongside technical and soft skills.</li>
+                  <li>Legal literacy, such as understanding employment contracts and labor laws, is necessary.</li>
+                  <li>English proficiency and presentation skills are critical for building a professional presence.</li>
+                  <li>A positive attitude and adherence to company policies are vital for workplace success.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What I Plan to Implement -->
-            <h4 class="mt-5 mb-3">What I Plan to Implement in the Future</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What I Plan to Implement in the Future</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I will focus on cultivating a positive and professional attitude by treating others with respect and fairness, aligning with HR’s emphasis on cultural fit and work ethic. I’ll apply the principles of project proposal development in my academic projects to ensure clarity and structure. To meet industry expectations, I plan to deepen my understanding of HR practices through further reading and observation. Additionally, I will improve my English proficiency through practice and courses to enhance communication with global teams. I’ll practice presentation skills to confidently share ideas and develop a professional LinkedIn profile to showcase my skills and engage with industry professionals. I also intend to study employment contracts, labor laws, and company policies to prepare for future roles. In the long term, I aim to align my technical and soft skills with organizational goals to support career growth.</p>
+                <ul>
+                  <li>I will cultivate a positive and professional attitude by treating others with respect and fairness, aligning with HR’s emphasis on cultural fit.</li>
+                  <li>I’ll apply project proposal principles in academic projects for clarity and structure.</li>
+                  <li>I plan to deepen my understanding of HR practices through further reading and observation.</li>
+                  <li>I will improve my English proficiency through practice and courses to enhance global communication.</li>
+                  <li>I’ll practice presentation skills to confidently share ideas.</li>
+                  <li>I will develop a professional LinkedIn profile to showcase skills and engage with industry professionals.</li>
+                  <li>I intend to study employment contracts, labor laws, and company policies to prepare for future roles.</li>
+                  <li>I aim to align my technical and soft skills with organizational goals to support career growth.</li>
+                </ul>
               </div>
             </div>
 
@@ -108,24 +193,24 @@
             <h4 class="mt-5 mb-3">Session Images</h4>
             <div class="row">
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card shadow-sm h-100">
-                  <img src="images/mahindan.jpeg" class="card-img-top" alt="Session Image 1">
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/mahindan.jpeg" class="card-img-top" alt="Mr. Mahinthan Subenthiran discussing HR expectations">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 1</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card shadow-sm h-100">
-                  <img src="images/mahindan2.jpeg" class="card-img-top" alt="Session Image 2" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/mahindan2.jpeg" class="card-img-top" alt="Participants learning about project proposals">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 2</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card shadow-sm h-100">
-                  <img src="images/mahindan3.jpeg" class="card-img-top" alt="Session Image 3">
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/mahindan3.jpeg" class="card-img-top" alt="Group discussion on industry attitudes">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 3</p>
                   </div>
@@ -141,13 +226,12 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
+        <p>© <span id="current-year"></span> <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/a.n.o._.2k/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ano2k/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com/@ano_2k" class="youtube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </footer>
@@ -161,6 +245,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

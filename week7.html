@@ -22,23 +22,79 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for modifications -->
   <style>
-    h4 {
-      font-weight: bold !important;
-      color: #f28c38 !important;
+    .card {
+      border-radius: 8px; /* Curved edges for all cards */
+      border: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
     }
+
     .card-body {
       padding: 2rem !important;
     }
+
+ .image-card {
+      margin-bottom: 1.5rem; /* Reduced margin for image cards */
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+    transform: translateY(-10px); /* Moves card upward on hover */
+  }
+    .image-card .card-body {
+      padding: 1rem !important; /* Reduced padding for smaller image card size */
+    }
+
     .card-img-top {
-      height: 300px !important;
+      height: 300px !important; /* Original image size preserved */
       object-fit: contain !important;
+    }
+
+    h3.card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: bold !important;
+      color: #f28c38 !important;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .session-details p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -62,44 +118,61 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <!-- Session Details -->
             <div class="card mb-4 shadow-sm">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Session Details</h3>
-                <p class="mb-2"><strong>Date:</strong> 27th Mar 2025</p>
-                <p class="mb-2"><strong>Resource Person:</strong> Dr. N. Manikandan, M.E., Ph.D</p>
-                <p class="mb-2"><strong>Designation:</strong> Assistant Professor, SRM University, Chennai</p>
-                <p class="mb-0"><strong>Topic:</strong> Managing Stress and Balancing Work-Life</p>
+              <div class="card-body session-details">
+                <h3 class="card-title">Session Details</h3>
+                <p><strong>Date:</strong> 27th Mar 2025</p>
+                <p><strong>Resource Person:</strong> Dr. N. Manikandan, M.E., Ph.D</p>
+                <p><strong>Designation:</strong> Assistant Professor, SRM University, Chennai</p>
+                <p><strong>Topic:</strong> Managing Stress and Balancing Work-Life</p>
               </div>
             </div>
 
             <!-- Topic Summary -->
-            <h4 class="mt-5 mb-3">Topic Summary</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>Topic Summary</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Dr. N. Manikandan delivered an engaging and light-hearted session on managing stress and achieving a healthy work-life balance, emphasizing the importance of mental well-being in professional success.</p>
+                <ul>
+                  <li>Dr. N. Manikandan delivered an engaging and light-hearted session on managing stress.</li>
+                  <li>He emphasized the importance of mental well-being in achieving professional success.</li>
+                  <li>The session focused on achieving a healthy work-life balance through practical strategies.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Taught -->
-            <h4 class="mt-5 mb-3">What Was Taught</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Taught</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>Dr. Manikandan shared practical techniques for stress management, such as taking regular breaks, practicing mindfulness, and prioritizing tasks to avoid burnout. He highlighted the importance of recognizing early signs of stress and addressing them proactively. The session also covered strategies for balancing personal and professional responsibilities, such as effective time management and setting boundaries. His humorous approach made the topic relatable and actionable.</p>
+                <ul>
+                  <li>Practical techniques for stress management include taking regular breaks, practicing mindfulness, and prioritizing tasks to avoid burnout.</li>
+                  <li>Recognizing early signs of stress and addressing them proactively is crucial.</li>
+                  <li>Strategies for balancing personal and professional responsibilities involve effective time management and setting boundaries.</li>
+                  <li>A humorous approach made the topic relatable and actionable.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What Was Learned -->
-            <h4 class="mt-5 mb-3">What Was Learned</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What Was Learned</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I learned that mental health is a critical component of professional success. The session taught me practical ways to manage stress, such as mindfulness exercises and structured time management. I also understood the importance of setting boundaries to maintain a healthy work-life balance.</p>
+                <ul>
+                  <li>Mental health is a critical component of professional success.</li>
+                  <li>Practical ways to manage stress include mindfulness exercises and structured time management.</li>
+                  <li>Setting boundaries is important for maintaining a healthy work-life balance.</li>
+                </ul>
               </div>
             </div>
 
             <!-- What I Plan to Implement -->
-            <h4 class="mt-5 mb-3">What I Plan to Implement in the Future</h4>
-            <div class="card mb-4 shadow-sm">
+            <h4>What I Plan to Implement in the Future</h4>
+            <div class="card shadow-sm">
               <div class="card-body">
-                <p>I will incorporate regular breaks and mindfulness practices into my daily routine to manage stress effectively. I’ll also use time management tools, like task prioritization apps, to balance academic and personal responsibilities. In the long term, I aim to develop habits that prevent burnout and support sustained productivity.</p>
+                <ul>
+                  <li>I will incorporate regular breaks and mindfulness practices into my daily routine to manage stress effectively.</li>
+                  <li>I’ll use time management tools, like task prioritization apps, to balance academic and personal responsibilities.</li>
+                  <li>I aim to develop habits that prevent burnout and support sustained productivity in the long term.</li>
+                </ul>
               </div>
             </div>
 
@@ -107,24 +180,24 @@
             <h4 class="mt-5 mb-3">Session Images</h4>
             <div class="row">
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card shadow-sm h-100">
-                  <img src="images/indian1.jpg" class="card-img-top" alt="Session Image 1" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/indian1.jpg" class="card-img-top" alt="Dr. N. Manikandan discussing stress management">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 1</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card shadow-sm h-100">
-                  <img src="images/indian.jpeg" class="card-img-top" alt="Session Image 2" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/indian.jpeg" class="card-img-top" alt="Participants learning about work-life balance">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 2</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card shadow-sm h-100">
-                  <img src="images/week7.png" class="card-img-top" alt="Session Image 3" >
+                <div class="card image-card shadow-sm h-60">
+                  <img src="images/week7.png" class="card-img-top" alt="Group activity on mindfulness techniques">
                   <div class="card-body">
                     <p class="card-text text-center">Session Image 3</p>
                   </div>
@@ -140,13 +213,12 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
+        <p>© <span id="current-year"></span> <strong class="px-1 sitename">AnoEduPortfolio</strong> - All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/a.n.o._.2k/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ano2k/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com/@ano_2k" class="youtube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </footer>
@@ -160,6 +232,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
